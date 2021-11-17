@@ -1,1 +1,36 @@
 <!-- Your quiz builder UI goes here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question Builder!</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <button onclick="displayQuestions()">Get all them questions</button>
+    <section class="quizBuilder">
+        <form id="quiz-builder">
+            <label for="question">Enter Your question!</label>
+            <input type="text" name="question" id="question">
+            <label for="answer1">Enter your first answer</label>
+            <input type="text" name="answer1" id= "answer1">
+            <label for="answer2">Enter your second answer</label>
+            <input type="text" name="answer2" id= "answer2">
+            <label for="answer3">Enter your third answer</label>
+            <input type="text" name="answer3" id= "answer3">
+            <label for="answer4">Enter your fourth answer</label>
+            <input type="text" name="answer4" id= "answer4">
+
+            <button type="submit">Submit Question</button>
+        </form>
+        <span id="success-notif"></span>
+    </section>
+
+    <script src="questions.js"></script>
+    <script src="builder.js"></script>
+</body>
+</html>

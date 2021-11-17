@@ -1,4 +1,8 @@
 /* Your styles for the mobile/small screen view of the quiz go here*/
+* {
+	box-sizing: border-box;
+}
+
 
 
 
