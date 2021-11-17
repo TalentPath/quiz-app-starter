@@ -1,12 +1,12 @@
 //Your quiz questions array of objects goes here
 document.addEventListener("load", function(event) {
-    getQuestions();
+    //getQuestions();
 });
 
 
 let questions = []
 //PLEASE REMEMBER TO CHANGE THIS TO 0 AT ONE POINT
-let numOfQuestions = 0;
+//let numOfQuestions = 0;
 
 //Place the item inside of the storage, turning it into JSON
 //sessionStorage.setItem(`question1`, JSON.stringify(questions));
@@ -14,13 +14,14 @@ let numOfQuestions = 0;
 //Get the item from the storage, and parse it out of the JSON
 //console.log(JSON.parse(sessionStorage.getItem(`questions`)));
 
-function makeNewQuestion(ques, ans1, ans2, ans3, ans4)
+function makeNewQuestion(ques, ans1, ans2, ans3, ans4, correct)
 {
-    numOfQuestions += 1;
+    //numOfQuestions += 1;
     //Right here is where reading from a form is gonna go
 
     //Right here is where creating the question and pushing it to the questions list is going to go
-    let newObject = {question : ques, answer : ans1, answer2 : ans2, answer3 : ans3, answer4 : ans4};
+    questions = JSON.parse(sessionStorage.getItem(`questions`));
+    let newObject = {q : ques, answer : ans1, answer2 : ans2, answer3 : ans3, answer4 : ans4, rightAns : correct};
     questions.push(newObject);
 
     //console.log(questions);
@@ -35,11 +36,13 @@ function makeNewQuestion(ques, ans1, ans2, ans3, ans4)
 }
 
 function getQuestions(){
-    questions = JSON.parse(sessionStorage.getItem(`questions`));
+    let questions = JSON.parse(sessionStorage.getItem(`questions`));
+    return questions;
 }
 
 function displayQuestions()
 {
+    let questions = getQuestions();
     //console.log(JSON.parse(sessionStorage.getItem(`questions`)));
     //questions = JSON.parse(sessionStorage.getItem(`questions`));
     for(let ques of questions)

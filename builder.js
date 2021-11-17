@@ -11,8 +11,9 @@ buildForm.addEventListener("submit", function(event) {
     let ans2 = document.getElementById('answer2').value;
     let ans3 = document.getElementById('answer3').value;
     let ans4 = document.getElementById('answer4').value;
+    let correct = document.getElementById('correct').value;
 
-    makeNewQuestion(ques, ans1, ans2, ans3, ans4);
+    makeNewQuestion(ques, ans1, ans2, ans3, ans4, correct);
     displayQuestions()
     buildForm.reset()
 })

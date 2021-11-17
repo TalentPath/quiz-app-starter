@@ -1,11 +1,142 @@
 /* Your styles for the mobile/small screen view of the quiz go here*/
+@import url("https://fonts.googleapis.com/css?family=Estonia&display=swap");
+
 * {
 	box-sizing: border-box;
+	background-color: #262955;
 }
 
+.quiz-display{
+	background-color: #4ab4ba;
+}
 
+.quiz-display button{
+	background-color: #f2eac6;
+	border-radius : 10px;
+}
+
+header a:hover {
+	color : #c05457;
+}
 
 
 @media all and (min-width: 600px){
 	/* Your styles for the desktop view go here */
+	header {
+		display : flex;
+		color : #f2eac6;
+		margin : 50px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header a {
+		order : 2;
+		font-size: 	25px;
+		color : #f68686;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.quiz-display
+	{
+		display : flex;
+		justify-content : center;
+		align-items: center;
+		margin : 50px;
+		height: 500px;
+		border-radius: 50px;
+		font-size: large;
+	}
+	.quiz-builder {
+		display : flex;
+		justify-content : center;
+		align-items: center;
+		margin : 50px;
+		height: 500px;
+		border-radius: 50px;
+	}
+
+	.quiz-display button, span {
+		height: 100px;
+		width: 200px;
+		border : none;
+		border-radius : 10px;
+		display : flex;
+		justify-content: center;
+		align-items : center;
+		background-color : #f68686;
+		padding : 10px;
+	}
+
+	#quiz
+	{
+		background-color: #f68686;
+		border-radius: 25px;
+		resize: none;
+		height : 400px;
+		width : 500px;
+		padding : 50px 100px;
+		display : flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-direction: column;
+		text-align : center;
+	}
+	#quiz-builder
+	{
+		background-color: #f68686;
+		border-radius: 25px;
+		resize: none;
+		height : 600px;
+		width : 500px;
+		padding : 50px 100px;
+		display : flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-direction: column;
+		text-align : center;
+	}
+
+	#quiz div, label
+	{
+		background-color: #f68686;
+	}
+
+	#quiz div
+	{
+		padding-bottom: 50px;
+	}
+
+	#quiz input[type=button] {
+		margin-top: 25px;
+		height: 50px;
+		border : none;
+		background-color: #4ab4ba;
+		border-radius : 12.5px
+	}
+
+	#quiz-builder button
+	{
+		margin-top: 25px;
+		height: 50px;
+		border : none;
+		background-color: #4ab4ba;
+		border-radius : 12.5px
+	}
+
+	#quiz-builder input[type=text]
+	{
+		background-color: white;
+		height : 30px;
+		margin : 10px 0;
+		border-radius: 5px;
+		text-align : center;
+		font-size: medium;
+	}
+
+	#quiz-builder select {
+		width : 25%;
+		height : 30px;
+		background-color : #f2eac6
+	}
 }
