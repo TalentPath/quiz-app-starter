@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
+    <title>PEMDAS Quiz App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--Your quiz layout goes here-->
+
+    <div class="container">
+        <h1 id="title" class="title">PEMDAS QUIZ</h1>
+        <!-- <div id="scoreText" class="hide">Question: <span id="score"></span></div> -->
+        <div id="scoreText" class="hide">Score: <span id="score"></span></div>
+        <div id="questionContainer" class="hide">
+            <div id="question">Question</div>
+            <div id="answerBtns" class="btnGrid">
+                <button id="btn1" class="btn">Answer 1</button>
+                <button id="btn2" class="btn">Answer 2</button>
+                <button id="btn3" class="btn">Answer 3</button>
+                <button id="btn4" class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="startBtn" class="startBtn btn">Start</button>
+            <button id="nextBtn" class="nextBtn btn hide">Next</button>
+        </div>
+    </div>
     <script src="questions.js"></script>
     <script src="quiz.js"></script>
 </body>
+
 </html>
