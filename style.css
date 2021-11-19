@@ -1,6 +1,86 @@
 /* Your styles for the mobile/small screen view of the quiz go here*/
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+body{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: lightgoldenrodyellow;
+	background-image: url(images/math.jpeg);
+	background-size: 100% 100%;
+}
 
+body.correct{
+	background-color: darkgreen;
+}
+
+body.wrong{
+	background-color: darkred;
+}
+
+.container{
+	width: 600px;
+	max-width: 80%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0 0 10px 2px;
+}
+
+#scoreText, #title{
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.btnGrid {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 10px;
+	margin: 20px 0;
+}
+
+.btn {
+	background-color: lightgray;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.btn:hover{
+	border-color: gold;
+}
+
+.btn.correct{
+	background-color: darkgreen;
+}
+
+.btn.wrong{
+	background-color: darkred;
+}
+
+.startBtn, .nextBtn {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hide {
+	display: none;
+}
 
 @media all and (min-width: 600px){
 	/* Your styles for the desktop view go here */
