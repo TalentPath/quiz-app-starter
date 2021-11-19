@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>ANIME QUIZ GAME</h1>
+        <a href="builder.html">Build a question</a>
+    </header>
+    <section class="quiz-display">
+        <!--<button onclick="displayQuestions()">Get all them questions</button>-->
+        <button id="start-button" onclick="startGame()">Start Game</button>
+        <span id="end-message" style="display : none"></span>
+        <button id="loop-button" onclick="startGame()" style="display : none">Play again!</button>
+        <form id="quiz" style="display : none">
+            <div id="ques">Insert Question Here</div>
+            <input type="radio" name="quiz-queso" id="A" value="A">
+            <label for="a1">Answer 1</label>
+            <input type="radio" name="quiz-queso" id="B" value="B">
+            <label for="a2">Answer 2</label>
+            <input type="radio" name="quiz-queso" id="C" value="C">
+            <label for="a3">Answer 3</label>
+            <input type="radio" name="quiz-queso" id="D" value="D">
+            <label for="a4">Answer 4</label>
+            <input type="button" value="Submit Answer" onclick="submitAndNext()">
+        </form>
+    </section>
     <!--Your quiz layout goes here-->
     <script src="questions.js"></script>
     <script src="quiz.js"></script>

@@ -1,1 +1,44 @@
 <!-- Your quiz builder UI goes here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Question Builder!</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <!--<button onclick="displayQuestions()">Get all them questions</button>-->
+    <section class="quiz-builder">
+        <form id="quiz-builder">
+            <label for="question">Enter Your question!</label>
+            <input type="text" name="question" id="question">
+            <label for="answer1">Enter your first answer</label>
+            <input type="text" name="answer1" id= "answer1">
+            <label for="answer2">Enter your second answer</label>
+            <input type="text" name="answer2" id= "answer2">
+            <label for="answer3">Enter your third answer</label>
+            <input type="text" name="answer3" id= "answer3">
+            <label for="answer4">Enter your fourth answer</label>
+            <input type="text" name="answer4" id= "answer4">
+            <label for="correct">Which choice is the correct answer, A, B, C, or D?</label>
+            <select name="correct" id="correct">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+
+            <button type="submit">Submit Question</button>
+        </form>
+        <!--<span id="success-notif"></span>-->
+    </section>
+
+    <script src="questions.js"></script>
+    <script src="builder.js"></script>
+</body>
+</html>
